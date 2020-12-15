@@ -17,10 +17,10 @@ package main
 неиспользованный импорт
 */
 
-
 import (
 	"./side_packages"
 )
+
 func main(){
 	//side_packages.HelloWorld()
 	//side_packages.DataTypes()
@@ -31,5 +31,17 @@ func main(){
 	//side_packages.NumSwitch()
 	//side_packages.ArrayMean()
 	//side_packages.Slices()
-	side_packages.Maps()
+	//side_packages.Maps()
+	//side_packages.CountAverage()
+	//side_packages.FunctionsStack()
+	//side_packages.SeveralNums()
+	//side_packages.CatchError()
+	//side_packages.MultiArgs(1, 2, 3, 4, 5)
+	//side_packages.FuncInsideFunc()
+	//fact := side_packages.Factorial(5)
+	//fmt.Println(fact)
+	//side_packages.Both()
+	//side_packages.ErrorPanic()
+	side_packages.Fib(5)
+
 }
