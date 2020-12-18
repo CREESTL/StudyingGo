@@ -41,8 +41,12 @@ func main(){
 	//side_packages.Both()
 	//side_packages.ErrorPanic()
 	//side_packages.Fib(5)
-	side_packages.CheckZero()
-	side_packages.CheckOne()
-	side_packages.CheckSwap()
+	//side_packages.CheckZero()
+	//side_packages.CheckOne()
+	//side_packages.CheckSwap()
+	//side_packages.CircleOperations()
+	//side_packages.RectangleOperations()
+	//side_packages.BeepAndroid()
+	side_packages.InterfaceOperations()
 
 }
