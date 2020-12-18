@@ -48,11 +48,19 @@ func (r *Rectangle) area() float64{
 	return (r.x2 - r.x1) * (r.y2 - r.y1)
 }
 
+// можно и не использовать указатель на Rectangle
+// тогда и при вызове не надо будет передавать по адресу
+func (r Rectangle) noPtr(){
+	fmt.Println("no pointer needed")
+}
+
 func RectangleOperations(){
 	r := Rectangle{0,0,5, 3}
 	fmt.Println(r.area())
-
+	r.noPtr()
 }
+
+
 
 
 // ================================================
@@ -77,4 +85,5 @@ func BeepAndroid(){
 	b500.Person.talk()
 	// но и сам андроид может говорить!
 	b500.talk()
+
 }
