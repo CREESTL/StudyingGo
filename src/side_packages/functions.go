@@ -71,6 +71,7 @@ func Factorial(x int)int{
 	}
 }
 
+
 // ОТЛОЖЕННЫЙ ЗАПУСК
 func first(){
 	fmt.Println("1st")
@@ -106,5 +107,4 @@ func Fib(num int)int{
 	}else{
 		return Fib(num - 1) + Fib(num - 2)
 	}
-
 }

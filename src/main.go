@@ -16,11 +16,9 @@ package main
 --Наличие неиспользованной переменной или импорта - ОШИБКА (компиляции) - такая философия Go. Он сам удалит
 неиспользованный импорт
 */
-
 import (
 	"./side_packages"
 )
-
 func main(){
 	//side_packages.HelloWorld()
 	//side_packages.DataTypes()
@@ -42,6 +40,9 @@ func main(){
 	//fmt.Println(fact)
 	//side_packages.Both()
 	//side_packages.ErrorPanic()
-	side_packages.Fib(5)
+	//side_packages.Fib(5)
+	side_packages.CheckZero()
+	side_packages.CheckOne()
+	side_packages.CheckSwap()
 
 }
