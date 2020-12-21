@@ -47,6 +47,9 @@ func main(){
 	//side_packages.CircleOperations()
 	//side_packages.RectangleOperations()
 	//side_packages.BeepAndroid()
-	side_packages.InterfaceOperations()
+	//side_packages.InterfaceOperations()
+	//side_packages.GoRoutines()
+	//side_packages.Channels()
+	side_packages.ShowSelect()
 
 }
