@@ -82,31 +82,46 @@ SELECT выбирает первый готовый канал. Производ
 
  */
 
-func  ShowSelect(){
+func ShowSelect() {
 	c1 := make(chan string)
-	c2 := make(chan string)
+	// второй аргумент - размер буфера канала (опционально)
+	c2 := make(chan string, 1)
+
+	go func() {
+		for {
+			c1 <- "from 1"
+			time.Sleep(time.Second * 2)
+		}
+	}()
+
+	go func() {
+		for {
+			c2 <- "from 2"
+			time.Sleep(time.Second * 3)
+		}
+	}()
 
 	go func(){
 		for {
-			c1 <- "from 1"
-			time.Sleep(time.Second * 1)
-		}
-	}()
-	go func(){
-		for {
-			c2 <- "from 2"
-			time.Sleep(time.Second * 1)
-		}
-	}()
-	go func(){
-		for {
-			select{
-			case msg1 := <- c1: fmt.Println(msg1)
-			case msg2 := <- c2: fmt.Println(msg2)
+			select {
+			case <- c1:
+				fmt.Println("Message from c1")
+			case <- c2:
+				fmt.Println("Message from c2")
+			case <- time.After(time.Second):
+				fmt.Println("One second passed!!")
 			}
 		}
 	}()
 
 	var stopper string
-	fmt.Scanln(stopper)
+	fmt.Scanln(&stopper)
+}
+
+// задание - написать свою функцию Sleep
+func Sleep(seconds int){
+	select{
+	case <- time.After(time.Second * time.Duration(seconds)):
+		fmt.Println("Timer is over")
+	}
 }

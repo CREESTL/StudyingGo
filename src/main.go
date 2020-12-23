@@ -50,6 +50,6 @@ func main(){
 	//side_packages.InterfaceOperations()
 	//side_packages.GoRoutines()
 	//side_packages.Channels()
-	side_packages.ShowSelect()
-
+	//side_packages.ShowSelect()
+	side_packages.Sleep(5)
 }
