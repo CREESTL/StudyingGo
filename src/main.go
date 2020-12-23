@@ -16,6 +16,7 @@ package main
 --Наличие неиспользованной переменной или импорта - ОШИБКА (компиляции) - такая философия Go. Он сам удалит
 неиспользованный импорт
 */
+
 import (
 	"./side_packages"
 )
@@ -51,5 +52,6 @@ func main(){
 	//side_packages.GoRoutines()
 	//side_packages.Channels()
 	//side_packages.ShowSelect()
-	side_packages.Sleep(5)
+	//side_packages.Sleep(5)
+	side_packages.DRY()
 }
