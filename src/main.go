@@ -53,5 +53,6 @@ func main(){
 	//side_packages.Channels()
 	//side_packages.ShowSelect()
 	//side_packages.Sleep(5)
-	side_packages.DRY()
+	//side_packages.DRY()
+	side_packages.Strings()
 }
