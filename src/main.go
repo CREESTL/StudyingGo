@@ -63,5 +63,7 @@ func main(){
 	//side_packages.WriteIntoFile()
 	//side_packages.ListDir()
 	//side_packages.RecurrentListDir()
-	side_packages.CustomError()
+	//side_packages.CustomError()
+	//side_packages.LinkedList()
+	side_packages.Sorting()
 }
