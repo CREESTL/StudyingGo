@@ -54,5 +54,8 @@ func main(){
 	//side_packages.ShowSelect()
 	//side_packages.Sleep(5)
 	//side_packages.DRY()
-	side_packages.Strings()
+	//side_packages.Strings()
+	//side_packages.ReadInStrings()
+	//side_packages.ReadSingleSymbol()
+	side_packages.ReadWithScanner()
 }
