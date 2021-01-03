@@ -57,5 +57,11 @@ func main(){
 	//side_packages.Strings()
 	//side_packages.ReadInStrings()
 	//side_packages.ReadSingleSymbol()
-	side_packages.ReadWithScanner()
+	//side_packages.ReadWithScanner()
+	//side_packages.ReadFromFile()
+	//side_packages.FastReadFromFile()
+	//side_packages.WriteIntoFile()
+	//side_packages.ListDir()
+	//side_packages.RecurrentListDir()
+	side_packages.CustomError()
 }
