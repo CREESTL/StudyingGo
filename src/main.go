@@ -17,9 +17,8 @@ package main
 неиспользованный импорт
 */
 
-import (
-	"./side_packages"
-)
+import "./side_packages"
+
 func main(){
 	//side_packages.HelloWorld()
 	//side_packages.DataTypes()
@@ -68,5 +67,8 @@ func main(){
 	//side_packages.Sorting()
 	//side_packages.SimpleHash()
 	//side_packages.CompareStrings()
-	side_packages.SHA1()
+	//side_packages.SHA1()
+	//side_packages.TCPServer()
+	//side_packages.HTTPServer()
+	side_packages.Mutex()
 }
