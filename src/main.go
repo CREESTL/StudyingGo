@@ -65,5 +65,8 @@ func main(){
 	//side_packages.RecurrentListDir()
 	//side_packages.CustomError()
 	//side_packages.LinkedList()
-	side_packages.Sorting()
+	//side_packages.Sorting()
+	//side_packages.SimpleHash()
+	//side_packages.CompareStrings()
+	side_packages.SHA1()
 }
